@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./form.css"/>
+    <style>
+      body {
+        background: #000070;
+      }
+      form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.1);
+        padding: 100px;
+      }
+
+      label {
+        font-family: sans-serif;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        color: #fff;
+      }
+
+      input {
+        display: inline-block;
+        border: none;
+        text-align: left;
+        box-shadow: 3px 2px rgba(121, 83, 210, 0.3);
+        padding: 10px;
+        width: 350px;
+        margin: 15px 0;
+        background: transparent;
+        color: #fff;
+      }
+
+      input[type='text']:focus {
+        background: none;
+        border-bottom: none;
+        color: #fff;
+      }
+
+      button {
+        background: transparent;
+        color: #fff;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin: 20px 0;
+        padding: 10px 30px;
+        border: 2px solid #fff;
+      }
+
+      span {
+        color: rgba(161, 138, 214, 0.3);
+        font-size: 18px;
+      }
+
+      button:hover {
+        background: transparent;
+        border: 2px solid rgba(69, 39, 160, 0.4);
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/postForm" method="post" enctype="multipart/form-data">
+      <label> Name: </label> </br>
+      <input type="text" name="userName" placeholder="" required /><br>
+      <label> Team Name: </label><span>optional*</span><br/>
+      <input type="text" name="teamName" placeholder="" required/><br>
+      <label> Your Email: </label> </br>
+      <input type="text" name="email" placeholder="" required /><br>
+      <label> Your Contact: </label> </br>
+      <input type="text" name="contact" placeholder="" required/><br>
+      <label> Domain: </label> </br>
+      <input type="text" name="domain" placeholder="" requireds/><br>
+      <label> Members Required: </label> </br>
+      <input type="text" name="membersRequired" placeholder="" requireds/><br>
+      <button> Submit </button>
+    <br>
+    </form>
+  </body>
+</html>
